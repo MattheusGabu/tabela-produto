@@ -1,0 +1,46 @@
+/* Aplica fundo preto e texto branco para todo o corpo da página */
+body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Deixa fundo preto em tabelas, cabeçalhos, células etc */
+table, thead, tbody, th, td, tr {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #444 !important; /* Opcional: deixa bordas discretas */
+}
+
+/* Ajusta cor dos elementos do Bootstrap */
+.table th,
+.table td {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+/* Estiliza as imagens para que fiquem menores */
+.table img {
+  width: 80px; /* Define uma largura menor para as imagens */
+  height: 80px; /* Define uma altura proporcional para as imagens */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+  margin: 0 auto; /* Centraliza a imagem na célula */
+  display: block; /* Garante que o elemento seja tratado como bloco para centralizar corretamente */
+}
+
+/* Separa visualmente cada linha com uma borda inferior */
+.table tbody tr {
+  border-bottom: 1px solid #444; /* cor discreta pra manter o estilo escuro */
+}
+
+/* Dá um pequeno espaçamento interno nas células */
+.table td, .table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* (Opcional) Efeito hover para destacar a linha ao passar o mouse */
+.table tbody tr:hover {
+  background-color: #111;
+  transition: background-color 0.2s;
+}
